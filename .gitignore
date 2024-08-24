@@ -1,4 +1,10 @@
 /release-build/
+/dpkg/debian/
 /node_modules/
-/debian
+*.deb
+*.ddeb
+*.dsc
+*.tar.gz
+*.buildinfo
+*.changes
 .idea
