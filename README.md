@@ -34,5 +34,6 @@ This is a simple Electron-based application that runs whatsapp as a standalone w
 4. **Run the Installation Script**
 
    ```bash
-   ./install_zapforlinux.sh
+   cd /release-build/zapforlinux-webview-linux-x64
+   ./zapforlinux-webview
 
