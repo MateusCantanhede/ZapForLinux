@@ -5,7 +5,7 @@ USER_NAME=$(whoami)
 
 # Caminho da pasta release-build e do destino na pasta pessoal
 SOURCE_DIR="release-build/zapforlinux-webview-linux-x64"
-DEST_DIR="/home/$USER_NAME/zapforlinux"
+DEST_DIR="/home/$USER_NAME/.zapforlinux"
 
 # Verifica se a pasta de destino existe, caso contrário, cria
 if [ ! -d "$DEST_DIR" ]; then
@@ -31,6 +31,6 @@ X-GNOME-StartupWMClass=zapforlinux" > "$DESKTOP_FILE"
 
 # Torna o arquivo .desktop executável
 chmod +x "$DESKTOP_FILE"
-sudo chown root:root /home/neurodancer/zapforlinux/chrome-sandbox
-sudo chmod 4755 /home/neurodancer/zapforlinux/chrome-sandbox
+sudo chown root:root /home/neurodancer/.zapforlinux/chrome-sandbox
+sudo chmod 4755 /home/neurodancer/.zapforlinux/chrome-sandbox
 echo "O aplicativo Zapforlinux foi instalado com sucesso."
